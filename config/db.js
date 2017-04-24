@@ -1,3 +1,3 @@
 module.exports = {
-	'url': 'custom url connection string'
+	'url': 'mongodb://localhost/ChatHeads'
 };
