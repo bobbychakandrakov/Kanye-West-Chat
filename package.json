@@ -12,5 +12,8 @@
     "chat"
   ],
   "author": "Boyan Chakandrakov",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
