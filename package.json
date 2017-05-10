@@ -14,7 +14,9 @@
   "author": "Boyan Chakandrakov",
   "license": "MIT",
   "dependencies": {
+    "async": "^2.4.0",
     "express": "^4.15.2",
-    "mongoose": "^4.9.6"
+    "mongoose": "^4.9.6",
+    "request": "^2.81.0"
   }
 }
