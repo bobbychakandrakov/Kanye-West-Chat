@@ -8,6 +8,11 @@ var Album = require('./models/album');
 var AlbumController = require('./controllers/AlbumsController');
 var SeedController = require('./controllers/SeedController');
 
+
+//Routres
+
+var albumRoutes = require('./routes/album.routes');
+
 // Connect to database
 mongoose.connect(config.url);
 var con = mongoose.connection;
@@ -37,7 +42,7 @@ var app = express();
 
 // Set appliction values
 app.set('port', process.env.PORT || 3000);
-
+app.use('/albums', albumRoutes);
 app.get('/',function (req,res) {
 	request('http://www.kanyerest.xyz/api/album/the_life_of_pablo', function (error, response, body) {
 	  var album = JSON.parse(body).result;
